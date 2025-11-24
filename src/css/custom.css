@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&display=swap');
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-font-family-base: 'Kantumruy Pro', 'Segoe UI', Arial, sans-serif;
+  --ifm-heading-font-family: 'Kantumruy Pro', 'Segoe UI', Arial, sans-serif;
+  --ifm-color-primary: #1f5fbf;
+  --ifm-color-primary-dark: #1b55ab;
+  --ifm-color-primary-darker: #184c98;
+  --ifm-color-primary-darkest: #133c78;
+  --ifm-color-primary-light: #3a7ad8;
+  --ifm-color-primary-lighter: #5c93e2;
+  --ifm-color-primary-lightest: #87b1ec;
+  --ifm-background-color: #eef1f5;
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: #3a8bff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(31, 95, 191, 0.12);
+}
+
+/* Neon cyan for dark mode with higher glow/contrast. */
+[data-theme='dark'] {
+  --ifm-font-family-base: 'Kantumruy Pro', 'Segoe UI', Arial, sans-serif;
+  --ifm-heading-font-family: 'Kantumruy Pro', 'Segoe UI', Arial, sans-serif;
+  --ifm-color-primary: #42f6ff;
+  --ifm-color-primary-dark: #2fd3e0;
+  --ifm-color-primary-darker: #27b6c4;
+  --ifm-color-primary-darkest: #1c8a95;
+  --ifm-color-primary-light: #6ff9ff;
+  --ifm-color-primary-lighter: #9ffbff;
+  --ifm-color-primary-lightest: #c9fdff;
+  --ifm-background-color: #0a1014;
+  --docusaurus-highlighted-code-line-bg: rgba(66, 246, 255, 0.2);
+}
+
+/* Neon-style hover/active cues */
+:root .navbar__link:hover,
+:root .navbar__title:hover,
+:root .menu__link:hover {
+  color: var(--ifm-link-hover-color);
+  text-shadow: 0 0 8px rgba(58, 139, 255, 0.35);
+}
+
+:root .menu__link--active,
+:root .navbar__link--active {
+  color: var(--ifm-color-primary-light);
+  text-shadow: 0 0 12px rgba(58, 139, 255, 0.28);
+}
+
+.button.button--primary:hover {
+  box-shadow: 0 6px 18px rgba(58, 139, 255, 0.32), 0 0 0 0.15rem rgba(58, 139, 255, 0.28);
+  transform: translateY(-1px);
+  transition: all 160ms ease;
+}
+
+.button.button--primary:active {
+  box-shadow: 0 3px 10px rgba(58, 139, 255, 0.32);
+  transform: translateY(0);
+}
+
+/* Keep doc pagination at the bottom even with short content */
+.theme-doc-page .main-wrapper {
+  min-height: calc(100vh - var(--ifm-navbar-height, 64px));
+}
+
+.theme-doc-page .container {
+  height: 100%;
+}
+
+.theme-doc-page .row {
+  height: 100%;
+}
+
+.theme-doc-page .docItemCol {
+  display: flex;
+}
+
+.theme-doc-page .docItemContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.theme-doc-page .theme-doc-markdown {
+  flex: 1 1 auto;
+}
+
+.theme-doc-page .pagination-nav {
+  margin-top: auto;
+}
