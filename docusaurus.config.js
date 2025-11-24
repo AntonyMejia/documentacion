@@ -2,7 +2,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Notas de proyectos',
+  title: 'Documentación',
   tagline: 'Docrew - POPS - etc.',
   favicon: 'img/favicon.ico',
 
@@ -10,10 +10,10 @@ const config = {
     v4: true,
   },
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  url: 'https://antonymejia.github.io',
+  baseUrl: '/documentacion/',
 
-  organizationName: 'notas',
+  organizationName: 'AntonyMejia',
   projectName: 'documentacion',
 
   onBrokenLinks: 'throw',
