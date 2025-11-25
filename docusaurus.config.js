@@ -30,7 +30,6 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          exclude: ['proyectos/docrew/**'],
         },
         blog: false,
         pages: false,
@@ -51,8 +50,10 @@ const config = {
       navbar: {
         title: 'Notas de proyectos',
         logo: {
-          alt: 'Logo',
+          alt: 'Notas de proyectos',
           src: 'img/logo.svg',
+          srcDark: 'img/logo.svg',
+          href: '/documentacion/',
         },
         items: [
           {
